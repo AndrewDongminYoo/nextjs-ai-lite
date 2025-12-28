@@ -29,7 +29,7 @@ export default function GenUI() {
     }
   };
   return (
-    <div className="relative flex h-[calc(100vh_-_theme(spacing.16))] overflow-hidden pb-10 flex-col">
+    <div className="relative flex h-[calc(100vh-(--spacing(16)))] overflow-hidden pb-10 flex-col">
       <div className="group w-full overflow-auto">
         <div className="max-w-xl mx-auto mt-10 mb-24">
           {conversation.length <= 0 && <GenUICard />}

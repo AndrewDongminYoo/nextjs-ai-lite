@@ -85,7 +85,7 @@ export async function Weather({ city, unit }: WeatherProps) {
 
   return (
     <div
-      className="min-w-full mx-auto bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl shadow-lg overflow-hidden"
+      className="min-w-full mx-auto bg-linear-to-br from-blue-500 to-purple-600 rounded-xl shadow-lg overflow-hidden"
       key={`${city}-${unit}`}
     >
       <h2 className="text-4xl font-bold text-white text-center pt-8">{city}</h2>
