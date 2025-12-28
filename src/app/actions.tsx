@@ -19,7 +19,7 @@ export interface Message {
 // Streaming Chat
 export async function continueTextConversation(messages: ModelMessage[]) {
   const result = await streamText({
-    model: openai("gpt-4-turbo"),
+    model: openai("gpt-5-mini"),
     messages,
   });
 
@@ -32,7 +32,7 @@ export async function continueConversation(history: Message[]) {
   const stream = createStreamableUI();
 
   const { text, toolResults } = await generateText({
-    model: openai("gpt-3.5-turbo"),
+    model: openai("gpt-5-nano"),
     system: "You are a friendly weather assistant!",
     messages: history,
     tools: {
